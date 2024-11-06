@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div-data{
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 30%;
+            height: 50px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 15px auto
+        }
+            /* Arrow container */
+            .arrows-container{
+                display: flex;
+            justify-content: space-between;
+            width: 50%;
+            margin: 15px auto
+            }
+    .arrow-container {
+      display: flex;
+      align-items: center;
+      margin: 15px;
+    }
+    /* Arrow tail */
+    .arrow-tail {
+      width: 50px; /* Adjust tail length */
+      height: 4px; /* Adjust tail thickness */
+      background-color: black; /* Tail color */
+    }
+    /* Arrowhead */
+    .arrowhead {
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 20px solid black; /* Arrow color */
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="div-data" style="background-color: rgb(106, 57, 151); margin: auto ">Data Sources</div>
+    <div class="container">
+        <div class="arrow-container" style="transform: rotate(90deg);">
+            <div class="arrow-tail"></div>
+            <div class="arrowhead"></div>
+          </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="div-data" style="background-color: yellow;">Dark Web</div>
+            <div class="div-data" style="background-color: yellowgreen">Deep Web</div>
+            <div class="div-data" style="background-color: greenyellow;">Open Source</div>
+           
+        </div>
+         <!-- arrows -->
+         <div class="arrows-container">
+            <div class="arrow-container"  style="transform: rotate(45deg)">
+                <div class="arrow-tail"></div>
+                <div class="arrowhead"></div>
+            </div>
+            <div class="arrow-container" style="transform: rotate(90deg);">
+                <div class="arrow-tail"></div>
+                <div class="arrowhead"></div>
+            </div>
+            <div class="arrow-container"  style="transform: rotate(135deg);">
+                <div class="arrow-tail"></div>
+                <div class="arrowhead"></div>
+            </div>
+         </div>
+    </div>
+    
+    <div class="div-data" style="background-color: rgb(106, 57, 151); margin: auto ">Data Ingestion Engine</div>
+    <div class="container">
+        <div class="arrow-container" style="transform: rotate(90deg);">
+            <div class="arrow-tail"></div>
+            <div class="arrowhead"></div>
+        </div>
+    </div>
+    
+    <div class="div-data" style="background-color: rgb(106, 57, 151); margin: auto ">Threat Intel Platform</div>
+    <div class="container">
+        <div class="arrow-container" style="transform: rotate(90deg);">
+            <div class="arrow-tail"></div>
+            <div class="arrowhead"></div>
+        </div>
+    </div>
+
+    <div class="div-data" style="background-color: rgb(106, 57, 151); margin: auto ">Actionable Intelligence</div>
+     <!-- arrows -->
+     <div class="arrows-container">
+        <div class="arrow-container"  style="transform: rotate(135deg)">
+            <div class="arrow-tail"></div>
+            <div class="arrowhead"></div>
+        </div>
+        <div class="arrow-container" style="transform: rotate(90deg);">
+            <div class="arrow-tail"></div>
+            <div class="arrowhead"></div>
+        </div>
+        <div class="arrow-container"  style="transform: rotate(45deg);">
+            <div class="arrow-tail"></div>
+            <div class="arrowhead"></div>
+        </div>
+     </div>
+    <div class="container">
+        <div class="div-data" style="background-color: yellow;">Mobile App</div>
+        <div class="div-data" style="background-color: yellowgreen">Portal</div>
+        <div class="div-data" style="background-color: greenyellow;">SMS Alert</div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+        // gsap.registerPlugin(ScrollTrigger);
+
+    </script>
+</body>
+</html>
